@@ -839,6 +839,8 @@ if [ "${DO_KERNEL}" = "-k" ] || \
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 fi
 
+cp /root/config.xml /usr/local/etc/config.xml
+
 if [ "${DO_PKGS}" = "-p" -a -n "${DO_UPGRADE}" ]; then
 	echo -n "Extracting ${PACKAGESSET}..."
 
